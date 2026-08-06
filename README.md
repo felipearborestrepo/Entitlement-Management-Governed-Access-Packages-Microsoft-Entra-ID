@@ -1,6 +1,6 @@
 # Module Description
 Designed and deployed a governed access management system using Microsoft Entra ID Entitlement Management. Built a catalog of department-based access packages with approval workflows, expiration policies, and self-service request capabilities through the My Access portal. Shifts access ownership from IT to department managers while maintaining full governance and audit trail.
-**Step 1 — Created the Department Access Catalog**
+# Step 1 — Created the Department Access Catalog
 - Navigated to Entra Portal → Identity Governance → Entitlement Management → Catalogs
 - Created a new catalog named Department Access Catalog
 - Set external visibility to No — internal users only
@@ -9,7 +9,7 @@ Designed and deployed a governed access management system using Microsoft Entra 
 
 <img width="438" height="861" alt="Image 8-5-26 at 21 40" src="https://github.com/user-attachments/assets/1cf03a5e-fb7b-4d2c-90ee-d04afaada1df" />
 
-**Step 2 — Added department groups as resources to the catalog**
+# Step 2 — Added department groups as resources to the catalog
 - Opened the catalog → Resources tab → Add Resources → Groups and Teams
 - Added the following security groups as resources:
 - Engineering Team
@@ -23,7 +23,7 @@ Designed and deployed a governed access management system using Microsoft Entra 
 
 <img width="1258" height="583" alt="Image 8-5-26 at 21 51" src="https://github.com/user-attachments/assets/42d7e77c-b645-492a-bfc4-f076c29e164a" />
 
-**Step 3 — Created the Engineering Access Package**
+# Step 3 — Created the Engineering Access Package
 - Navigated to Identity Governance → Entitlement Management → Access Packages → New Access Package
 - Configured the package:
 - Name        : Engineering Access Package
@@ -50,7 +50,7 @@ Designed and deployed a governed access management system using Microsoft Entra 
 
 <img width="991" height="627" alt="Image 8-5-26 at 21 57" src="https://github.com/user-attachments/assets/a1779915-844a-4329-afc4-191c693abe7a" />
 
-**Step 4 — Created access packages for all remaining departments**
+# Step 4 — Created access packages for all remaining departments
 - Repeated the same configuration for each department:
 - HR Access Package      → HR Team group → Manager approval → 365 days
 - Sales Access Package   → Sales Team group → Manager approval → 365 days
@@ -60,7 +60,7 @@ Designed and deployed a governed access management system using Microsoft Entra 
 
 <img width="1421" height="551" alt="Image 8-5-26 at 22 04" src="https://github.com/user-attachments/assets/712acd5f-541b-4a3a-92ee-c59e23bcca6f" />
 
-**Step 5 — Requested access as Carlos Rivera**
+# Step 5 — Requested access as Carlos Rivera
 - Signed in to the My Access portal as Carlos Rivera:
 - https://myaccess.microsoft.com
 - Browsed available access packages
@@ -73,7 +73,7 @@ Designed and deployed a governed access management system using Microsoft Entra 
 
 <img width="876" height="287" alt="Image 8-5-26 at 22 08" src="https://github.com/user-attachments/assets/6f90e1f1-b70a-47b9-9205-1ba11727ced3" />
 
-**Step 6 — Approved the request as admin**
+# Step 6 — Approved the request as admin
 - Signed in to My Access portal as the admin account — Carlos Rivera's manager
 - Navigated to Approvals tab
 - Found Carlos Rivera's pending Engineering Access Package request
