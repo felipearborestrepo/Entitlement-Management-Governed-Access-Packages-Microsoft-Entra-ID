@@ -29,26 +29,59 @@ Designed and deployed a governed access management system using Microsoft Entra 
 - Name        : Engineering Access Package
 - Description : Access for Engineering department members
 - Catalog     : Department Access Catalog
-
-  <img width="1188" height="515" alt="Image 8-5-26 at 21 52" src="https://github.com/user-attachments/assets/fac392ad-7174-46bf-9642-32581ce396b3" />
-
 - On the Resource Roles tab added:
 - Resource    : Engineering Team group
 - Role        : Member
-
-<img width="1418" height="350" alt="Image 8-5-26 at 21 52 (1)" src="https://github.com/user-attachments/assets/9ed95585-2382-41ae-91ff-728d95176478" />
-
 - On the Requests tab configured:
 - Who can request : Users in your directory
 - Require approval: Yes
 - Approver        : Manager (requestor's direct manager)
-
-<img width="1225" height="720" alt="Image 8-5-26 at 21 55" src="https://github.com/user-attachments/assets/30ab562d-e3e6-460f-911f-ea199fa4d5ac" />
-
-<img width="830" height="844" alt="Image 8-5-26 at 21 56" src="https://github.com/user-attachments/assets/ad80844c-5c76-41b1-85f4-f6922ee0fd4e" />
-
 - Expiration      : 365 days
 - Approval is routed automatically to the requestor's manager in Entra ID — no IT intervention needed
 - Access expires after 365 days — user must re-request if still needed
 
-<img width="991" height="627" alt="Image 8-5-26 at 21 57" src="https://github.com/user-attachments/assets/8d797094-3716-4131-aa43-69972a5154ad" />
+<img width="1188" height="515" alt="Image 8-5-26 at 21 52" src="https://github.com/user-attachments/assets/1d67b2b7-6b16-4cf4-a715-e88b2bd5be35" />
+
+<img width="1418" height="350" alt="Image 8-5-26 at 21 52 (1)" src="https://github.com/user-attachments/assets/6b942c87-81a1-40f7-b4da-b60cba57f763" />
+
+<img width="1225" height="720" alt="Image 8-5-26 at 21 55" src="https://github.com/user-attachments/assets/88fbe633-52aa-4afc-aa39-c3049cfe9b18" />
+
+<img width="830" height="844" alt="Image 8-5-26 at 21 56" src="https://github.com/user-attachments/assets/cac6ffcb-277b-4871-8ba8-a72d27cb4517" />
+
+<img width="991" height="627" alt="Image 8-5-26 at 21 57" src="https://github.com/user-attachments/assets/a1779915-844a-4329-afc4-191c693abe7a" />
+
+**Step 4 — Created access packages for all remaining departments**
+- Repeated the same configuration for each department:
+- HR Access Package      → HR Team group → Manager approval → 365 days
+- Sales Access Package   → Sales Team group → Manager approval → 365 days
+- Finance Access Package → Finance Team group → Manager approval → 365 days
+- IT Access Package      → IT Team group → Manager approval → 365 days
+- All packages follow the same governed model — self-service request, manager approval, automatic expiration
+
+<img width="1421" height="551" alt="Image 8-5-26 at 22 04" src="https://github.com/user-attachments/assets/712acd5f-541b-4a3a-92ee-c59e23bcca6f" />
+
+**Step 5 — Requested access as Carlos Rivera**
+- Signed in to the My Access portal as Carlos Rivera:
+- https://myaccess.microsoft.com
+- Browsed available access packages
+- Selected Engineering Access Package
+- Submitted the access request
+- Request entered pending approval state — access not yet granted
+- Carlos Rivera cannot access Sales Team resources until manager approves
+
+<img width="1414" height="385" alt="Image 8-5-26 at 22 07" src="https://github.com/user-attachments/assets/e512f22d-a4c8-4874-a67f-45b03cebbfdd" />
+
+<img width="876" height="287" alt="Image 8-5-26 at 22 08" src="https://github.com/user-attachments/assets/6f90e1f1-b70a-47b9-9205-1ba11727ced3" />
+
+**Step 6 — Approved the request as admin**
+- Signed in to My Access portal as the admin account — Carlos Rivera's manager
+- Navigated to Approvals tab
+- Found Carlos Rivera's pending Engineering Access Package request
+- Reviewed the request details
+- Clicked Approve
+- Access granted automatically — Carlos Rivera added to Engineering Team group
+- Full audit trail created — who requested, who approved, when, what access was granted
+
+<img width="1409" height="439" alt="Image 8-5-26 at 22 09" src="https://github.com/user-attachments/assets/e9602790-1526-4ba8-bce6-38ac73d5e3ed" />
+
+<img width="331" height="838" alt="Image 8-5-26 at 22 13" src="https://github.com/user-attachments/assets/1c9bccc4-3bf6-4b50-a8a4-d53652259f15" />
