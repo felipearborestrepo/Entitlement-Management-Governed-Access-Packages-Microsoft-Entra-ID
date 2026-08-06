@@ -29,23 +29,26 @@ Designed and deployed a governed access management system using Microsoft Entra 
 - Name        : Engineering Access Package
 - Description : Access for Engineering department members
 - Catalog     : Department Access Catalog
+
+  <img width="1188" height="515" alt="Image 8-5-26 at 21 52" src="https://github.com/user-attachments/assets/fac392ad-7174-46bf-9642-32581ce396b3" />
+
 - On the Resource Roles tab added:
 - Resource    : Engineering Team group
 - Role        : Member
+
+<img width="1418" height="350" alt="Image 8-5-26 at 21 52 (1)" src="https://github.com/user-attachments/assets/9ed95585-2382-41ae-91ff-728d95176478" />
+
 - On the Requests tab configured:
 - Who can request : Users in your directory
 - Require approval: Yes
 - Approver        : Manager (requestor's direct manager)
+
+<img width="1225" height="720" alt="Image 8-5-26 at 21 55" src="https://github.com/user-attachments/assets/30ab562d-e3e6-460f-911f-ea199fa4d5ac" />
+
+<img width="830" height="844" alt="Image 8-5-26 at 21 56" src="https://github.com/user-attachments/assets/ad80844c-5c76-41b1-85f4-f6922ee0fd4e" />
+
 - Expiration      : 365 days
 - Approval is routed automatically to the requestor's manager in Entra ID — no IT intervention needed
 - Access expires after 365 days — user must re-request if still needed
-
-<img width="1188" height="515" alt="Image 8-5-26 at 21 52" src="https://github.com/user-attachments/assets/b04b3438-f098-42f3-bdd6-2e6645ef19da" />
-
-<img width="1418" height="350" alt="Image 8-5-26 at 21 52 (1)" src="https://github.com/user-attachments/assets/352b18c4-2f16-48c1-b6ac-90483477f48f" />
-
-<img width="1225" height="720" alt="Image 8-5-26 at 21 55" src="https://github.com/user-attachments/assets/3c104a34-6308-45b4-82d9-6ac1fa6549fe" />
-
-<img width="830" height="844" alt="Image 8-5-26 at 21 56" src="https://github.com/user-attachments/assets/e693f0ef-d3ae-4405-b3ba-eec203abe46a" />
 
 <img width="991" height="627" alt="Image 8-5-26 at 21 57" src="https://github.com/user-attachments/assets/8d797094-3716-4131-aa43-69972a5154ad" />
