@@ -85,3 +85,5 @@ Designed and deployed a governed access management system using Microsoft Entra 
 <img width="1409" height="439" alt="Image 8-5-26 at 22 09" src="https://github.com/user-attachments/assets/e9602790-1526-4ba8-bce6-38ac73d5e3ed" />
 
 <img width="331" height="838" alt="Image 8-5-26 at 22 13" src="https://github.com/user-attachments/assets/1c9bccc4-3bf6-4b50-a8a4-d53652259f15" />
+
+<img width="1149" height="452" alt="Image 8-6-26 at 19 54" src="https://github.com/user-attachments/assets/55bf1c32-f913-440b-a78a-d42a71ee37d5" />
